@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="rules-container">
+        <h1>Number Guessing Game Rules</h1>
+        <ol>
+            <li>The computer will generate a random number between 1 and 40.</li>
+            <li>You have 6 attempts to guess the number correctly.</li>
+            <li>If your guess is lower than the number, the circle will turn yellow.</li>
+            <li>If your guess is higher than the number, the circle will turn red.</li>
+            <li>If your guess is correct, the circle will turn green and you win!</li>
+            <li>If you use all 6 attempts without guessing the correct number, you lose.</li>
+        </ol>
+        <button id="play-btn">Let's Play!</button>
+    </div>
+
+    <div id="game-container" style="display:none;">
+        <h1>Number Guessing Game</h1>
+        <p>Guess the number between 1 and 40!</p>
+        <p>Attempt: <span id="attempt-count">0</span> / 6</p>
+        <div id="circle-container"></div>
+        <p id="message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
